@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nocturne — Simulation Sandbox</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='28' font-size='28'>◈</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <aside id="sidebar">
+      <div class="sidebar-header">
+        <h1>Nocturne</h1>
+        <div class="subtitle">Simulation Sandbox</div>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-section-header">Simulations</div>
+        <div id="sim-list"></div>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-section-header">Controls</div>
+        <div id="controls"></div>
+      </div>
+
+      <div class="global-actions">
+        <button id="pause-btn" class="global-btn" title="Pause/Resume (Space)">⏸</button>
+        <button id="reset-btn" class="global-btn" title="Reset (R)">↺</button>
+      </div>
+
+      <div class="sim-info">
+        <div id="sim-title">⟐ Sentient Boids</div>
+        <div id="sim-desc"></div>
+        <div id="sim-instructions"></div>
+      </div>
+    </aside>
+
+    <main id="canvas-container">
+      <div class="hud">
+        <span id="fps-display">0 FPS</span>
+        <span id="count-display">0 agents</span>
+      </div>
+      <div class="keyboard-hint">1-5: Switch &nbsp;·&nbsp; Space: Pause &nbsp;·&nbsp; R: Reset</div>
+    </main>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
