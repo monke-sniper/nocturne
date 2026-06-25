@@ -11,6 +11,10 @@ export class Mind {
       drive.tick(dt);
     }
 
+    for (const action of this.actions) {
+      if (action._cooldownTimer > 0) action._cooldownTimer -= dt;
+    }
+
     let bestScore = -Infinity;
     let bestAction = null;
 

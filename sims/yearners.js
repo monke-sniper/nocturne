@@ -224,8 +224,10 @@ export class Yearners {
         }
       }
 
+      let predDist = Infinity;
       if (this.predators.length > 0 && safetyU > 0.3) {
-        let nearestPred = null, predDist = Infinity;
+        let nearestPred = null;
+        predDist = Infinity;
         for (const p of this.predators) {
           const d = Math.sqrt((p.x - c.x) ** 2 + (p.y - c.y) ** 2);
           if (d < predDist) { predDist = d; nearestPred = p; }
