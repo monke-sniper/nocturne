@@ -4,6 +4,7 @@
 
 No dependencies. Just a browser and curiosity.
 
+-this project is currently under development and has lots of bugs. It will NOT work as of now but more development will come soon
 ---
 
 ## Simulations
